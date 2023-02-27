@@ -32,7 +32,7 @@ def perform_query():
         res = query_handler(query[i], values[i], temp_res, DATA_DIR + os.sep + file_name)
         temp_res = res
 
-    jsonify(list(res))
+    return jsonify(list(res))
 
 
 if __name__ == '__main__':
